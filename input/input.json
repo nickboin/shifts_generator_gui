@@ -1,0 +1,798 @@
+{
+    "senior_physician"          : [
+        "medico1",
+        "medico2",
+        "medico3"
+    ],
+    "chief_medical_officier"    : [
+        "medico1"
+    ],
+    "mfs"                       : [
+        "medico8", 
+        "medico9"
+    ],
+    "multiple_operator_task"    : [
+        "sede1,reparto(a,other)",
+        "sede1,sala_operatoria(day_surgery,other)",
+        "sede1,sala_operatoria(ord_lungo,other)",
+        "sede1,sala_operatoria(ord_breve,other)"
+    ],
+    "job_description"               : {
+        "sede1,guardia_notte"   : {
+            "cathegory"         : "guardia_notte",
+            "operating_day"     : [1,2,3,4,5,6,7],
+            "operating_time"    : [20,8],
+            "qualified_physician" : [
+                "medico4",
+                "medico2",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"    
+            ],
+            "compatibility" : [
+                "sede1,guardia_notte"
+            ]
+        },
+        "sede1,reperibile(1)"   : {
+            "cathegory"         : "reperibile",
+            "operating_day"     : [1,2,3,4,5,6,7],
+            "operating_time"    : [17,8],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)"
+            ],
+            "extra_compatibility" : {
+                "sede1,endoscopia"   : [5,6]
+            }
+        },
+        "sede1,reperibile(2)"   : {
+            "cathegory"         : "reperibile",
+            "operating_day"     : [1,2,3,4,5,6,7],
+            "operating_time"    : [17,8],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(2)"
+            ],
+            "extra_compatibility" : {
+                "sede1,endoscopia"   : [5,6]
+            }
+        },
+        "sede1,guardia_mattina" : {
+            "cathegory"         : "guardia",
+            "operating_day"     : [1,2,3,4,5,6,7],
+            "operating_time"    : [8,14],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "preference" : [
+                {
+                    "physician":[
+                        "medico2"
+                    ],
+                    "penality" : 1,
+                    "day" : [1,2,3,4,5]
+                },
+                {
+                    "physician":[
+                        "medico5"
+                    ],
+                    "penality" : 2,
+                    "day" : [1,2,3,4,5]
+                }
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,guardia_mattina"
+            ]
+        },
+        "sede1,guardia_pomeriggio" : {
+            "cathegory"         : "guardia",
+            "operating_day"     : [1,2,3,4,5],
+            "operating_time"    : [14,20],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,guardia_mattina",
+                "sede1,guardia_pomeriggio"
+            ]
+        },
+        "sede1,reparto(a,1)" : {
+            "cathegory"         : "reparto",
+            "operating_day"     : [1,2,3,4,5,6,7],
+            "operating_time"    : [8,17],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reparto(a,1)"
+            ],
+            "extra_compatibility" : {
+                "sede1,reperibile(1)"   : [6,7],
+                "sede1,reperibile(2)"   : [6,7],
+                "sede1,guardia_mattina" : [6,7],
+                "sede1,guardia_pomeriggio" : [6,7],
+                "sede1,reparto(b,1)"    : [6,7]
+            }
+        },
+        "sede1,reparto(a,other)" : {
+            "cathegory"         : "reparto",
+            "operating_day"     : [1,2,3,4,5],
+            "operating_time"    : [8,17],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8",
+                "mfs1",
+                "mfs2"
+            ],
+            "preference" : [
+                {
+                    "physician":[
+                        "mfs1",
+                        "mfs2"
+                    ],
+                    "penality" : 2,
+                    "day" : [1,2,3,4,5]
+                },
+                {
+                    "physician":[
+                        "medico5",
+                        "medico1"
+                    ],
+                    "penality" : 1,
+                    "day" : [1,2,3,4,5]
+                }
+            ],
+            "compatibility" : [
+                "sede1,reparto(a,other)"
+            ],
+            "extra_compatibility" : {
+                "sede1,reperibile(1)"   : [6,7],
+                "sede1,reperibile(2)"   : [6,7],
+                "sede1,guardia_mattina" : [6,7],
+                "sede1,guardia_pomeriggio" : [6,7]
+            }
+        },
+        "sede1,sala_operatoria(day_surgery,1)" : {
+            "cathegory"         : "sala",
+            "operating_day"     : [2],
+            "operating_time"    : [8,14],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,sala_operatoria(day_surgery,1)"
+            ]
+        },
+        "sede1,sala_operatoria(day_surgery,other)" : {
+            "cathegory"         : "sala",
+            "operating_day"     : [2],
+            "operating_time"    : [8,14],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8",
+                "mfs1",
+                "mfs2"
+            ],
+            "preference" : [
+                {
+                    "physician":[
+                        "mfs1",
+                        "mfs2"
+                    ],
+                    "penality" : 2
+                }
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,sala_operatoria(day_surgery,other)"
+            ]
+        },
+        "sede1,sala_operatoria(ord_lungo,1)" : {
+            "cathegory"         : "sala",
+            "operating_day"     : [1,4],
+            "operating_time"    : [8,17],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,sala_operatoria(ord_lungo,1)"
+            ]
+        },
+        "sede1,sala_operatoria(ord_lungo,other)" : {
+            "cathegory"         : "sala",
+            "operating_day"     : [1,4],
+            "operating_time"    : [8,17],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8",
+                "mfs1",
+                "mfs2"
+            ],
+            "preference" : [
+                {
+                    "physician":[
+                        "mfs1",
+                        "mfs2"
+                    ],
+                    "penality" : 2
+                }
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,sala_operatoria(ord_lungo,other)"
+            ]
+        },
+        "sede1,sala_operatoria(ord_breve,1)" : {
+            "cathegory"         : "sala",
+            "operating_day"     : [5],
+            "operating_time"    : [8,17],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,sala_operatoria(ord_breve,1)"
+            ]
+        },
+        "sede1,sala_operatoria(ord_breve,other)" : {
+            "cathegory"         : "sala",
+            "operating_day"     : [5],
+            "operating_time"    : [8,17],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8",
+                "mfs1",
+                "mfs2"
+            ],
+            "preference" : [
+                {
+                    "physician":[
+                        "mfs1",
+                        "mfs2"
+                    ],
+                    "penality" : 2
+                }
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,sala_operatoria(ord_breve,other)"
+            ]
+        },
+        "sede1,chirurgia_ambulatoriale(1)" : {
+            "cathegory"         : "chirurgia_ambulatoriale",
+            "operating_day"     : [3],
+            "operating_time"    : [8,13],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,guardia_pomeriggio",
+                "sede1,chirurgia_ambulatoriale(1)"
+            ]
+        },
+        "sede1,chirurgia_ambulatoriale(2)" : {
+            "cathegory"         : "chirurgia_ambulatoriale",
+            "operating_day"     : [3],
+            "operating_time"    : [8,13],
+            "qualified_physician" : [
+                "mfs1",
+                "mfs2"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,guardia_pomeriggio",
+                "sede1,chirurgia_ambulatoriale(2)"
+            ]
+        },
+        "sede1,ambulatorio_divisionale_mattino" : {
+            "cathegory"         : "ambulatorio_divisionale",
+            "operating_day"     : [2,4],
+            "operating_time"    : [8,14],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,guardia_pomeriggio",
+                "sede1,ambulatorio_divisionale_mattino"
+            ]
+        },
+        "sede1,ambulatorio_divisionale_pomeriggio" : {
+            "cathegory"         : "ambulatorio_divisionale",
+            "operating_day"     : [2],
+            "operating_time"    : [14,20],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,guardia_mattina",
+                "sede1,sala_operatoria(day_surgery,1)",
+                "sede1,sala_operatoria(day_surgery,other)",
+                "sede1,sala_operatoria(ord_breve,1)",
+                "sede1,sala_operatoria(ord_breve,other)",
+                "sede1,sala_operatoria(ord_lungo,other)",
+                "sede1,chirurgia_ambulatoriale(1)",
+                "sede1,chirurgia_ambulatoriale(2)",
+                "sede1,ambulatorio_divisionale_mattino",
+                "sede1,ambulatorio_divisionale_pomeriggio"
+            ]
+        },
+        "sede1,ambulatorio_proctologico" : {
+            "cathegory"         : "ambulatorio_proctologico",
+            "operating_day"     : [3,4],
+            "operating_time"    : [8,12],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico5",
+                "medico6",
+                "medico8"
+            ],
+            "preference" : [
+                {
+                    "physician":[
+                        "medico2",
+                        "medico5",
+                        "medico7"
+                    ],
+                    "penality" : 2
+                }
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,guardia_pomeriggio",
+                "sede1,ambulatorio_divisionale_pomeriggio",
+                "sede1,ambulatorio_proctologico"
+            ]
+        },
+        "sede1,ambulatorio_vascolare" : {
+            "cathegory"         : "ambulatorio_vascolare",
+            "operating_day"     : [2],
+            "operating_time"    : [13,17],
+            "qualified_physician" : [
+                "medico3",
+                "medico9"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,guardia_mattina",                
+                "sede1,sala_operatoria(day_surgery,1)",
+                "sede1,sala_operatoria(day_surgery,other)",
+                "sede1,sala_operatoria(ord_lungo,other)",
+                "sede1,sala_operatoria(ord_breve,1)",
+                "sede1,sala_operatoria(ord_breve,other)",
+                "sede1,chirurgia_ambulatoriale(1)",
+                "sede1,ambulatorio_divisionale_mattino",
+                "sede1,ambulatorio_vascolare"
+            ]
+        },
+        "sede1,endoscopia" : {
+            "cathegory"         : "endoscopia",
+            "operating_day"     : [1,3,4,5],
+            "operating_time"    : [8,16],
+            "qualified_physician" : [
+                "medico4"
+            ],
+            "compatibility" : [
+                "sede1,endoscopia"
+            ],
+            "extra_compatibility" : {
+                "sede1,reperibile(1)"   : [5,6],
+                "sede1,reperibile(2)"   : [5,6]
+            }
+        },
+        "sede1,ambulatorio_preaccessi" : {
+            "cathegory"         : "ambulatorio_preaccessi",
+            "operating_day"     : [1,3,4,5],
+            "operating_time"    : [8,10],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,guardia_mattina",
+                "sede1,guardia_pomeriggio",
+                "sede1,ambulatorio_divisionale_pomeriggio",
+                "sede1,ambulatorio_vascolare",
+                "sede1,ambulatorio_preaccessi"
+            ]
+        },
+        "sede2,guardia_mattina" : {
+            "cathegory"         : "guardia",
+            "operating_day"     : [1,2,3,4,5],
+            "operating_time"    : [8,14],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "preference" : [
+                {
+                    "physician":[
+                        "medico2"
+                    ],
+                    "penality" : 1
+                }
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede2,guardia_mattina"
+            ]
+        },
+        "sede2,guardia_pomeriggio" : {
+            "cathegory"         : "guardia",
+            "operating_day"     : [1,2,3,4,5],
+            "operating_time"    : [14,17],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede2,guardia_mattina",
+                "sede2,guardia_pomeriggio"
+            ]
+        },
+        "sede2,chirurgia_ambulatoriale(1)" : {
+            "cathegory"         : "chirurgia_ambulatoriale",
+            "operating_day"     : [5],
+            "operating_time"    : [8,13],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede2,guardia_mattina",
+                "sede2,guardia_pomeriggio",
+                "sede2,chirurgia_ambulatoriale(1)"
+            ]
+        },
+        "sede2,chirurgia_ambulatoriale(2)" : {
+            "cathegory"         : "chirurgia_ambulatoriale",
+            "operating_day"     : [5],
+            "operating_time"    : [8,13],
+            "qualified_physician" : [
+                "mfs1",
+                "mfs2"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede2,guardia_mattina",
+                "sede2,guardia_pomeriggio",
+                "sede2,chirurgia_ambulatoriale(2)"
+            ]
+        },
+        "sede2,ambulatorio_divisionale" : {
+            "cathegory"         : "ambulatorio_divisionale",
+            "operating_day"     : [2,4],
+            "operating_time"    : [13,16],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede2,guardia_mattina",
+                "sede2,guardia_pomeriggio",
+                "sede2,chirurgia_ambulatoriale(1)",
+                "sede2,chirurgia_ambulatoriale(2)",
+                "sede2,ambulatorio_divisionale"
+            ]
+        },
+        "sede2,endoscopia" : {
+            "cathegory"         : "endoscopia",
+            "operating_day"     : [2],
+            "operating_time"    : [8,14],
+            "qualified_physician" : ["medico4"],
+            "compatibility" : [
+                "sede2,endoscopia"
+            ]
+        },
+        "sede2,ambulatorio_proctologico" : {
+            "cathegory"         : "ambulatorio_proctologico",
+            "operating_time"    : [8,13],
+            "operating_day"     : [1],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "preference"       : [
+                {
+                    "physician":[
+                        "medico2",
+                        "medico5",
+                        "medico7"
+                    ],
+                    "penality" : 1
+                }
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede2,guardia_mattina",
+                "sede2,guardia_pomeriggio",
+                "sede2,ambulatorio_divisionale",
+                "sede2,ambulatorio_proctologico"
+            ]
+        },
+        "sede4,ambulatorio_divisionale" : {
+            "cathegory"         : "ambulatorio_divisionale",
+            "operating_time"    : [8,13],
+            "operating_day"     : [1,5],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,guardia_pomeriggio",
+                "sede1,ambulatorio_divisionale_pomeriggio",
+                "sede4,ambulatorio_divisionale"
+            ]
+        },
+        "sede4,ambulatorio_proctologico" : {
+            "cathegory"         : "ambulatorio_proctologico",
+            "operating_day"     : [2],
+            "operating_time"    : [8,14],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico5",
+                "medico6",
+                "medico8"
+            ],
+            "preference" : [
+                {
+                    "physician":[
+                        "medico2",
+                        "medico5",
+                        "medico7"
+                    ],
+                    "penality" : 2
+                }
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,guardia_pomeriggio",
+                "sede4,ambulatorio_vascolare",
+                "sede4,ambulatorio_proctologico"
+            ]
+        },
+        "sede3,ambulatorio_divisionale" : {
+            "cathegory"         : "ambulatorio_divisionale",
+            "operating_time"    : [8,13],
+            "operating_day"     : [1,3],
+            "qualified_physician" : [
+                "medico2",
+                "medico7",
+                "medico1",
+                "medico3",
+                "medico5",
+                "medico9",
+                "medico6",
+                "medico8"
+            ],
+            "compatibility" : [
+                "sede1,reperibile(1)",
+                "sede1,reperibile(2)",
+                "sede1,guardia_pomeriggio",
+                "sede1,ambulatorio_divisionale_pomeriggio",
+                "sede3,ambulatorio_divisionale"
+            ]
+        }
+    },
+    "avoid_group" : {
+        "1" : [
+            ["sede1,sala_operatoria(day_surgery,1)", "medico3"],
+            ["sede1,sala_operatoria(day_surgery,other)", "medico8"]
+        ]
+    },
+    "label_activity_to_avoid" : {
+        "maternita" : [
+            "sede1,reperibile(1)",
+            "sede1,reperibile(2)",
+            "sede1,guardia_notte",
+            "sede1,guardia_pomeriggio",
+            "sede2,guardia_pomeriggio"
+        ],
+        "esenzione_chirurgica" : [
+            "sede1,reperibile(1)",
+            "sede1,reperibile(2)",
+            "sede1,guardia_notte",
+            "sede1,sala_operatoria(day_surgery,1)",
+            "sede1,sala_operatoria(day_surgery,other)",
+            "sede1,sala_operatoria(ord_lungo,other)",
+            "sede1,sala_operatoria(ord_breve,1)",
+            "sede1,sala_operatoria(ord_breve,other)",
+            "sede1,chirurgia_ambulatoriale(1)",
+            "sede1,chirurgia_ambulatoriale(2)",
+            "sede2,chirurgia_ambulatoriale(1)",
+            "sede2,chirurgia_ambulatoriale(2)",
+            "sede1,guardia_pomeriggio"
+        ]
+    },
+    "label_day_to_avoid" : {
+        "maternita" : ["7"],
+        "esenzione_chirurgica" : ["7"]
+    }
+}

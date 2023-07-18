@@ -1,0 +1,32 @@
+{
+    "current_worked_time": {
+        "day": {
+            "medico1": 30,
+            "medico2": 9,
+            "medico3": 19,
+            "medico4": 10,
+            "medico5": 10,
+            "medico6": 12,
+            "medico7": 12,
+            "medico8": 20,
+            "medico9": 30,
+            
+        },
+        "night": {
+            "medico1": 0,
+            "medico2": 0,
+            "medico3": 0,
+            "medico4": 0,
+            "medico5": 0,
+            "medico6": 0,
+            "medico7": 24,
+            "medico8": 12,
+            "medico9": 24
+        }
+    },
+    "previous_overtime": {},
+    "threshold": [
+        0,
+        0
+    ]
+}

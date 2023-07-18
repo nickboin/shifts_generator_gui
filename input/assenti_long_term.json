@@ -1,0 +1,94 @@
+{
+    "2023":{
+        "1":{
+            "1":{
+                "ferie" :[
+                    "medico1", 
+                    "medico2"
+                ], 
+                "riposo":[
+                    "medico3"
+                ]
+            },
+            "2":{
+                "maternita":[
+                    "medico1", 
+                    "medico2"
+                ], 
+                "malattia":[
+                    "medico3"
+                ]
+            },
+            "3":{
+                "esenzione_chirurgica":[
+                    "medico1", 
+                    "medico2", 
+                    "medico3"
+                ]
+            },
+            "4":{
+                "legge104":[
+                    "medico1", 
+                    "medico2"
+                ],
+                "corsi":[ 
+                    "medico3"
+                ]
+            },
+            "5":{"ferie":["medico1", "medico2", "medico3"]},
+            "6":{"ferie":["medico1", "medico2", "medico3"]},
+            "7":{"legge104":["medico1", "medico2", "medico3"]}, 
+            "8":{"ferie":["medico1", "medico3"]},
+            "9":{"ferie":["medico1", "medico3"]},
+            "10":{"corsi":["medico1", "medico3"]},
+            "11":{"esenzione_chirurgica":["medico1", "medico3"]},
+            "12":{"ferie":["medico1", "medico3"]},
+            "13":{"ferie":["medico1", "medico3"]},
+            "14":{"corsi":["medico1", "medico3"]},
+            "15":{"ferie":["medico5", "medico1", "medico3"]},
+            "16":{"malattia":["medico5", "medico1", "medico3"]},
+            "17":{"ferie":["medico5", "medico1", "medico3"]},
+            "18":{"ferie":["medico5", "medico1", "medico3"]},
+            "19":{"ferie":["medico5", "medico1", "medico3"]},
+            "20":{"maternita":["medico5", "medico1", "medico3"]},
+            "21":{"ferie":["medico5", "medico1", "medico3"]},
+            "22":{"legge104":["medico1", "medico3"]},
+            "23":{"ferie":["medico1", "medico3"]},
+            "24":{"maternita":["medico1", "medico3"]},
+            "25":{"ferie":["medico1", "medico3"]},
+            "26":{"ferie":["medico1", "medico3"]},
+            "27":{"malattia":["medico1", "medico3"]},
+            "28":{"ferie":["medico1", "medico3"]}
+        },
+        "2":{
+            "1":{"ferie":["medico2", "medico7"]},
+            "2":{"ferie":["medico2", "medico7"]},
+            "3":{"ferie":["medico2", "medico7"]},
+            "4":{"meternita":["medico2", "medico7"]},
+            "5":{"ferie":["medico2", "medico7"]},
+            "6":{"ferie":["medico2", "medico7"]},
+            "7":{"esenzione_chirurgica":["medico2", "medico7"]}, 
+            "8":{"ferie":["medico7"]},
+            "9":{"ferie":["medico7"]},
+            "10":{"corsi":["medico7"]},
+            "11":{"ferie":["medico7"]},
+            "12":{"ferie":["medico7"]},
+            "13":{"legge104":["medico7"]},
+            "14":{"ferie":["medico7"]},
+            "15":{"ferie":["medico5", "medico7"]},
+            "16":{"ferie":["medico5", "medico7"]},
+            "17":{"maternita":["medico5", "medico7"]},
+            "18":{"ferie":["medico5", "medico7"]},
+            "19":{"ferie":["medico5", "medico7"]},
+            "20":{"esenzione_chirurgica":["medico5", "medico7"]},
+            "21":{"ferie":["medico5", "medico7"]},
+            "22":{"ferie":["medico7"]},
+            "23":{"malattia":["medico7"]},
+            "24":{"ferie":["medico7"]},
+            "25":{"malattia":["medico7"]},
+            "26":{"ferie":["medico7"]},
+            "27":{"ferie":["medico7"]},
+            "28":{"corsi":["medico7"]}
+        }
+    }
+}
